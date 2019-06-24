@@ -36,6 +36,10 @@ img.fw-full-size-in-parent {
   .subtitle {
     text-shadow: 2px 2px 1px rgba(darken($primary, 50%), 0.5);
   }
+
+  .hero-body {
+    @include fw-set-properties($padding-vertical, 9rem);
+  }
 }
 
 .demo-breakpoint {
