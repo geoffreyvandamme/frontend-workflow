@@ -1,6 +1,6 @@
 @import './../variables';
-@import './../../../../../node_modules/bulma/sass/utilities/initial-variables';
-@import './../../../../../node_modules/bulma/sass/utilities/mixins';
+// @import './../../../../../node_modules/bulma/sass/utilities/initial-variables';
+// @import './../../../../../node_modules/bulma/sass/utilities/mixins';
 
 /// Helper mixin for defining the css properties for responsive layouts
 /// Mobile first!
@@ -14,31 +14,31 @@
   }
 
   @if length($values) >= 2 and nth($values, 2) != null {
-    @include from($mobile) {
+    @include media-breakpoint-up(sm) {
       @include fw-set-properties($properties, nth($values, 2));
     }
   }
 
   @if length($values) >= 3 and nth($values, 3) != null {
-    @include from($tablet) {
+    @include media-breakpoint-up(md) {
       @include fw-set-properties($properties, nth($values, 3));
     }
   }
 
   @if length($values) >= 4 and nth($values, 4) != null {
-    @include from($desktop) {
+    @include media-breakpoint-up(lg) {
       @include fw-set-properties($properties, nth($values, 4));
     }
   }
 
   @if length($values) >= 5 and nth($values, 5) != null {
-    @include from($widescreen) {
+    @include media-breakpoint-up(xl) {
       @include fw-set-properties($properties, nth($values, 5));
     }
   }
 
   @if length($values) >= 6 and nth($values, 6) != null {
-    @include from($fullhd) {
+    @media (min-width: $fullhd) {
       @include fw-set-properties($properties, nth($values, 6));
     }
   }

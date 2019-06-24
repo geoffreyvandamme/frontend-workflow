@@ -1,7 +1,7 @@
 @import './../../../bootstrap';
-@import './../../../../node_modules/bulma/sass/utilities/mixins.sass';
+// @import './../../../../node_modules/bulma/sass/utilities/mixins.sass';
 
-$navbar-breakpoint: $desktop !default;
+$navbar-breakpoint: lg !default;
 
 .navbar {
   .has-dropdown {
@@ -11,7 +11,7 @@ $navbar-breakpoint: $desktop !default;
       }
     }
 
-    @include until($navbar-breakpoint) {
+    @include media-breakpoint-down($navbar-breakpoint) {
       &:not(.is-open) {
         .navbar-dropdown {
           display: none;
