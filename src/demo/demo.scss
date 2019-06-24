@@ -84,6 +84,10 @@ img.fw-full-size-in-parent {
     padding: 0.75rem 1rem;
     position: relative;
 
+    p {
+      margin-bottom: 0;
+    }
+
     &,
     strong {
       color: $color-white;
@@ -113,4 +117,8 @@ img.fw-full-size-in-parent {
       margin-bottom: 1rem;
     }
   }
+}
+
+.footer {
+  @include fw-set-properties($padding-vertical, 4rem);
 }
