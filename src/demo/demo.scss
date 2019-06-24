@@ -17,6 +17,15 @@ img.fw-full-size-in-parent {
   }
 }
 
+.navbar {
+  z-index: 50;
+  width: 100%;
+
+  .navbar-collapse {
+    flex-grow: inherit;
+  }
+}
+
 .same-height-example {
   &::after {
     display: block;
