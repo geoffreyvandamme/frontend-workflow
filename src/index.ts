@@ -1,4 +1,5 @@
 // Import Site singleton where the site logic is located
+import 'bootstrap'
 import {Site} from './project/Site'
 import {FreshContentNotification} from './vendor/fw/fresh-content-notification/FreshContentNotification'
 import {Workbox} from 'workbox-window/build/workbox-window.prod.umd'

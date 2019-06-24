@@ -10,7 +10,12 @@
 // Add your variables here and/or override Bulma variables
 
 // Base variables of Bulma framework
-@import './../node_modules/bulma/sass/utilities/initial-variables';
+// @import './../node_modules/bulma/sass/utilities/initial-variables';
+
+// import bootstrap functions and variables
+@import '~bootstrap/scss/_functions.scss';
+@import '~bootstrap/scss/_variables.scss';
+@import '~bootstrap/scss/mixins/_breakpoints.scss';
 
 // Workflow mixins
 @import './vendor/base/scss/mixins';

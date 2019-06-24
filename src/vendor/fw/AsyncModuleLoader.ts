@@ -74,6 +74,7 @@ export class AsyncModuleLoader {
   /**
    * Lazy loads "ResponsiveNavbar" if needed on the page
    */
+
   public static async loadResponsiveNavbar(): Promise<void> {
     if (AsyncModuleLoader.checkIfElementsExist('.navbar')) {
       await import(/* webpackChunkName: "responsivenavbar" */ './responsive-navbar/index')
@@ -170,7 +171,7 @@ export class AsyncModuleLoader {
     AsyncModuleLoader.loadGallery()
     AsyncModuleLoader.loadInViewAnimation()
     AsyncModuleLoader.loadParallax()
-    AsyncModuleLoader.loadResponsiveNavbar()
+    // AsyncModuleLoader.loadResponsiveNavbar()
     AsyncModuleLoader.loadSameHeight()
     AsyncModuleLoader.loadSlider()
   }

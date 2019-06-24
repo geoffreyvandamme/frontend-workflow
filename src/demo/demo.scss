@@ -1,7 +1,7 @@
 @import './../bootstrap';
 //@import './../vendor/base/scss/styles';
-@import './../../node_modules/bulma/sass/utilities/initial-variables';
-@import './../../node_modules/bulma/sass/utilities/derived-variables';
+// @import './../../node_modules/bulma/sass/utilities/initial-variables';
+// @import './../../node_modules/bulma/sass/utilities/derived-variables';
 
 .fw-full-size-in-parent {
   @include fw-full-size-in-parent();
@@ -27,7 +27,7 @@ img.fw-full-size-in-parent {
   &__item {
     width: 50%;
     float: left;
-    border: 1px dashed $grey-light;
+    border: 1px dashed $gray-300;
   }
 }
 
@@ -35,6 +35,10 @@ img.fw-full-size-in-parent {
   .title,
   .subtitle {
     text-shadow: 2px 2px 1px rgba(darken($primary, 50%), 0.5);
+  }
+
+  .hero-body {
+    @include fw-set-properties($padding-vertical, 9rem);
   }
 }
 
@@ -49,7 +53,7 @@ img.fw-full-size-in-parent {
 .swiper-container {
   width: 100%;
   height: 400px;
-  border: 1px solid $grey-light;
+  border: 1px solid $gray-300;
 }
 
 .swiper-slide {
@@ -80,13 +84,17 @@ img.fw-full-size-in-parent {
     padding: 0.75rem 1rem;
     position: relative;
 
+    p {
+      margin-bottom: 0;
+    }
+
     &,
     strong {
       color: $color-white;
     }
 
     &::after {
-      @include arrow($color-white);
+      // @include arrow($color-white);
 
       right: 1rem;
       transition: transform $duration-slow $swift-alt;
@@ -99,7 +107,7 @@ img.fw-full-size-in-parent {
 
   &__content {
     padding: 0.75rem 1rem;
-    border: 1px solid $white-ter;
+    border: 1px solid $white;
   }
 }
 
@@ -109,4 +117,8 @@ img.fw-full-size-in-parent {
       margin-bottom: 1rem;
     }
   }
+}
+
+.footer {
+  @include fw-set-properties($padding-vertical, 4rem);
 }
