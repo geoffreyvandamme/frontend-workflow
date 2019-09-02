@@ -9,6 +9,7 @@ img[data-srcset] {
 
 .fw-lazy-load {
   $root: &;
+
   width: 100%;
 
   &--opacity {
